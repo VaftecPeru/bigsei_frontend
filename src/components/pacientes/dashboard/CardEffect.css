@@ -1,0 +1,65 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes waveAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 50% 70%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 30%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-border {
+  position: relative;
+  border-radius: 20px;
+}
+
+.animated-border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60%; /* Solo cubre la parte superior */
+  background: linear-gradient(
+    45deg,
+    rgba(90, 115, 255, 0.5),
+    /* Azul vibrante */ rgba(135, 85, 250, 0.5),
+    /* Morado suave */ rgba(173, 216, 230, 0.5),
+    /* Celeste claro (cielo limpio) */ rgba(90, 115, 255, 0.5)
+      /* Azul vibrante */
+  );
+  background-size: 300% 300%;
+  animation: waveAnimation 6s ease infinite;
+  filter: blur(8px);
+  opacity: 0.7;
+  z-index: -1;
+
+  /* Forma de onda en la parte inferior */
+  mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="white" d="M0,192L80,192C160,192,320,96,480,90.7C640,85,800,171,960,176C1120,181,1280,107,1360,69.3L1440,32L1440,0L0,0Z"></path></svg>');
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  mask-position: bottom;
+}

@@ -1,0 +1,1 @@
+//parametro global del domainToASCII, aca todos los servicios lo van a consumir

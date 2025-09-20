@@ -1,0 +1,125 @@
+/* AvailabilityList.css */
+.availability-container {
+    padding: 24px;
+   
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    color: #4a90e2;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .add-button {
+    background-color: #10b981;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 24px;
+  }
+  
+  .add-button:hover {
+    background-color: #059669;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .show-records, .search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #666;
+  }
+  
+  .show-records select,
+  .search input {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 4px 8px;
+  }
+  
+  .table-container {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .edit-button,
+  .delete-button {
+    border: none;
+    border-radius: 4px;
+    padding: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .edit-button {
+    background-color: #fbbf24;
+    color: white;
+  }
+  
+  .delete-button {
+    background-color: #ef4444;
+    color: white;
+  }
+  
+  .edit-button:hover {
+    background-color: #f59e0b;
+  }
+  
+  .delete-button:hover {
+    background-color: #dc2626;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+  }
+  
+  .records-info {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .pagination-controls {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .pagination-button {
+    padding: 6px 12px;
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .pagination-button.active {
+    background-color: #4a90e2;
+    color: white;
+    border-color: #4a90e2;
+  }
+  
+  .pagination-button:disabled {
+    background-color: #f3f4f6;
+    cursor: not-allowed;
+    color: #9ca3af;
+  }

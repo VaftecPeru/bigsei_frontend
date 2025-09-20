@@ -1,0 +1,44 @@
+/* styles.css */
+
+/* Animación para trazo del texto */
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Animación para relleno de texto */
+@keyframes fillText {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animación para el subrayado */
+@keyframes underline {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 180px;
+    opacity: 1;
+  }
+}
+
+/* Clases de animación */
+.animate-dash {
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  animation: dash 2s ease forwards;
+}
+
+.animate-fillText {
+  animation: fillText 0.4s ease forwards;
+  animation-delay: 2s;
+}
+
+.animate-underline {
+  animation: underline 0.5s ease forwards;
+  animation-delay: 2.2s;
+}

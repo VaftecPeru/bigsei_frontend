@@ -1,0 +1,120 @@
+.formulario-medicamento {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Agrupar inputs en un grid */
+.gd-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+  gap: 15px;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+legend {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.saveMed {
+  width: 100%;
+  padding: 10px;
+  background: #1d0767;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.cancelMed {
+  width: 100%;
+  padding: 10px;
+  background: rgb(255, 200, 200); /* Rojo bajo */
+  color: white;
+  font-size: 16px;
+  border: 1px solid red;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.buttonAddMedicine {
+  background: white;
+  color: #333; /* Color del texto */
+  font-size: 16px;
+  padding: 12px 24px; /* Ajusta el tamaño del botón */
+  border: 2px solid #9692c5; /* Borde visible */
+  border-radius: 8px; /* Bordes redondeados */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  /* Sombra para efecto elevado */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Efecto al pasar el mouse */
+.buttonAddMedicine:hover {
+  background: linear-gradient(to bottom right, #eaebef, #c8c1d4, #9692c5);
+  color: white;
+  border-color: transparent;
+  box-shadow: 0 0 15px rgba(150, 146, 197, 0.8); /* Resplandor */
+  transform: scale(1.05); /* Lo agranda un poco */
+}
+s .buttons-cont {
+  display: flex;
+  justify-content: space-between; /* Distribuye los botones */
+  gap: 15px; /* Espacio entre botones */
+  padding: 20px 50px; /* Espaciado del contenido superior */
+}
+.buttonAddMedicine-cont {
+  display: flex;
+  justify-content: flex-end; /* Mueve todo el contenido al extremo derecho */
+  padding: 10px; /* Espaciado opcional */
+}
+
+buttonmed:hover {
+  background: #219150;
+}
+
+.cancelMed:hover {
+  background: red;
+}
+/* Para campos más largos como descripción */
+textarea {
+  min-height: 60px;
+}
+
+/* Hacer que la descripción ocupe toda la fila */
+textarea[name="descripcion"] {
+  grid-column: span 2;
+}
