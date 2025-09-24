@@ -13,16 +13,13 @@ export default function EventsIndex() {
       <Header />
       <Banner />
 
-      <main className="min-h-screen bg-gradient-to-br from-[#E6F3FF] to-[#D1E8FF] px-4 sm:px-6 lg:px-12 py-6 space-y-12 sm:space-y-16 lg:space-y-24">
-
-        {/* Eventos Online */}
-
+      <main className="min-h-screen bg-gradient-to-br from-[#E6F3FF] to-[#D1E8FF] px-4 sm:px-6 lg:px-12 py-6 space-y-10 sm:space-y-12 lg:space-y-16">
         {/* Sección Eventos Online */}
         <section
           id="eventos-online"
-          className="min-h-screen p-6 sm:p-8 lg:p-12 -mx-4 sm:-mx-6 lg:-mx-12"
+          className="p-6 sm:p-8 lg:p-12 -mx-4 sm:-mx-6 lg:-mx-12"
         >
-          <div className="text-center mb-8">
+          <div className="text-center mb-6">
             <h2 className="inline-block text-2xl sm:text-3xl lg:text-4xl font-bold text-[#00264A] dark:text-white relative pb-2">
               Eventos Online
             </h2>
@@ -35,9 +32,9 @@ export default function EventsIndex() {
         {/* Sección Próximos Eventos */}
         <section
           id="eventos"
-          className="min-h-screen bg-gradient-to-br from-[#E6F3FF] to-[#D1E8FF] p-6 sm:p-8 lg:p-12 -mx-4 sm:-mx-6 lg:-mx-12"
+          className="bg-gradient-to-br from-[#E6F3FF] to-[#D1E8FF] p-6 sm:p-8 lg:p-12 -mx-4 sm:-mx-6 lg:-mx-12"
         >
-          <div className="text-center mb-8">
+          <div className="text-center mb-6">
             <h2 className="inline-block text-2xl sm:text-3xl lg:text-4xl font-bold text-[#00264A] dark:text-white relative pb-2">
               Próximos Eventos
             </h2>
@@ -55,29 +52,25 @@ export default function EventsIndex() {
         </section>
 
         {/* Cronograma */}
-        <section id="cronograma" className="min-h-screen">
+        <section id="cronograma" className="py-8">
           <div className="-mx-4 sm:-mx-6 lg:-mx-12">
             <CronogramaBan />
           </div>
           <CronogramaSection />
         </section>
 
-
-
         {/* Formulario */}
-        <section id="formulario" className="min-h-screen">
-          <div className="text-center mb-8">
+        <section id="formulario" className="py-8">
+          <div className="text-center mb-6">
             <h2 className="inline-block text-2xl sm:text-3xl lg:text-4xl font-bold text-[#00264A] dark:text-white relative pb-2">
               Formulario
               <span className="block w-20 h-1 bg-[#C9002B] mx-auto mt-2 rounded"></span>
             </h2>
           </div>
 
-          {/* Contenedor con fondo blanco */}
           <div className="bg-white rounded-2xl shadow-lg p-4 sm:p-6 lg:p-6 max-w-lg mx-auto">
-  <FormContacto />
-</div>
-
+            <FormContacto />
+          </div>
         </section>
       </main>
 
@@ -131,7 +124,6 @@ export default function EventsIndex() {
           </div>
         </div>
       </footer>
-
     </div>
   );
 }
