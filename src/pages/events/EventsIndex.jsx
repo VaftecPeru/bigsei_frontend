@@ -20,12 +20,15 @@ export default function EventsIndex() {
           id="eventos-online"
           className="p-6 sm:p-8 lg:p-12 -mx-4 sm:-mx-6 lg:-mx-12"
         >
-          <div className="text-center mb-8">
-            <h2 className="inline-block text-2xl sm:text-3xl lg:text-4xl font-bold text-[#00264A] dark:text-white relative pb-2">
-              Eventos Online
-            </h2>
-            <span className="block w-20 h-1 bg-[#C9002B] mx-auto mt-2 rounded"></span>
+          <div className="text-left mb-8">
+            <div className="inline-block ml-8">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#00264A] dark:text-white relative pb-2">
+                Eventos Online
+              </h2>
+              <span className="block w-20 h-1 bg-[#C9002B] mx-auto mt-2 rounded"></span>
+            </div>
           </div>
+
 
           <EventosOnline />
         </section>
